@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barrio"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <title>Flappy Bird</title>
+    <style>
+      body {
+        /* background-color: #000; */
+        margin: 0;
+        overflow: hidden;
+        font-family: 'Barrio', 'cursive';
+      }
 
-  <title>Flappy Bird</title>
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden;
-      font-family: 'Barrio', 'cursive';
-    }
+      img {
+        display: none;
+      }
+    </style>
+  </head>
 
-    img {
-      display: none;
-    }
-  </style>
-</head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <img src="images/bg.png" id="bg" />
+    <img src="images/fg.png" id="fg" />
+    <img src="images/bird1.png" id="bird1" />
+    <!-- <img src="images/btn.png" id="btn" /> -->
+    <!-- <img src="images/bird2.png" id="bird2" />
+    <img src="images/bird3.png" id="bird3" /> -->
 
-<body>
-  <canvas id='canvas'></canvas>
-  <img src='images/bg.png' id='bg' />
-  <img src='images/fg.png' id='fg' />
-  <img src='images/bird1.png' id='bird1' />
-  <img src='images/bird2.png' id='bird2' />
-  <img src='images/bird3.png' id='bird3' />
-
-  <script src='js/Pipe.js'></script>
-  <script src='js/Bird.js'></script>
-  <script src='js/Environment.js'></script>
-  <script src='js/main.js'></script>
-</body>
-
+    <script src="js/Pipe.js"></script>
+    <script src="js/Bird.js"></script>
+    <script src="js/Environment.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
