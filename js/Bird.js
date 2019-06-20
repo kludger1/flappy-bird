@@ -66,7 +66,7 @@ Bird.prototype.score = function(pipes) {
     if (highPipe) {
       let alpha = this.x;
       if (alpha > x0 && alpha < x1) {
-        scr.play();
+        // scr.play();
         return true;
       }
     }

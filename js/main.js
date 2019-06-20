@@ -5,20 +5,7 @@ window.onload = function() {
 
   const ctx = cvs.getContext('2d');
 
-  const environment = new Environment(cvs, ctx);
-  const bird = new Bird(250, 300, ctx);
-  const pipes = [];
-  let pipeSet = generateRandomPipes(ctx, cvs.width, cvs.height - fg.height);
-  pipes.push(pipeSet.top, pipeSet.bottom);
-  setInterval(function() {
-    let pipeSet = generateRandomPipes(ctx, cvs.width, cvs.height - fg.height);
-    pipes.push(pipeSet.top, pipeSet.bottom);
-  }, 2600);
-
-  // gameLoop();
-
   let gameOver = true;
-
   if (gameOver === true) {
     drawInstruction(ctx, cvs, 'type "S" to start & "Space" to fly');
     document.addEventListener('keyup', e => {
@@ -27,6 +14,18 @@ window.onload = function() {
       }
     });
   }
+
+  const environment = new Environment(cvs, ctx);
+  const bird = new Bird(250, 300, ctx);
+  const pipes = [];
+  let pipeSet = generateRandomPipes(ctx, cvs.width, cvs.height - fg.height);
+  // pipes.push(pipeSet.top, pipeSet.bottom);
+  setInterval(function() {
+    let pipeSet = generateRandomPipes(ctx, cvs.width, cvs.height - fg.height);
+    pipes.push(pipeSet.top, pipeSet.bottom);
+  }, 2600);
+
+  // gameLoop();
 
   /*
    MAIN GAME LOOP
