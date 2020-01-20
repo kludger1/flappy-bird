@@ -1,4 +1,5 @@
-#Flappy Bird
+Flappy Bird
+
 This is a fun game that I made a while ago (sept 2018), 
 I followed a tutorial on YouTube, then I really made it my own adding many features. 
 Recently (June 2019) I decided to revisit it, 
